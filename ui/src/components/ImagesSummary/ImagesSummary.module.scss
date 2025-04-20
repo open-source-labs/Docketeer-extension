@@ -1,19 +1,19 @@
 // VARIABLES
-$criticalColor: #840803;
-$highColor: rgb(236, 0, 0);
-$medColor: #fb7431;
-$lowColor: #d9ca66;
-$negligible: #0a851896;
-$unknown: #59595996;
+$criticalColor: #F51B11;
+$highColor: #F58C64;
+$medColor: #19F5D8;
+$lowColor: #7DE2F5;
+$negligible: #AFAFAF;
+$unknown: #4F4F4F;
 
 // High Contrast Variables
-$criticalColor-HC: #791E89;
-$highColor-HC: #0072BC;
-$medColor-HC: #00B9F1;
-$lowColor-HC: #F7931D;
-$negligible-HC: #e4d800;
-$grayColor-HC: #59595996;
-$greenColor-HC: #59595996;
+$criticalColor-HC: #0E1D48;
+$highColor-HC: #53679D;
+$medColor-HC: #B39F6D;
+$lowColor-HC: #F1EDE3;
+$negligible-HC: #a7a7a7;
+$grayColor-HC: #E4E8F2;
+$greenColor-HC: #735E29;
 
 .summaryCard {
   border: 1px solid rgba(0, 0, 0, 0.301);

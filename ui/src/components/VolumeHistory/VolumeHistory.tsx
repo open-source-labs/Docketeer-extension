@@ -119,7 +119,7 @@ const VolumeHistory = (props:any): JSX.Element => {
           className={globalStyles.input}
           type="text"
           value={volumeName}
-          placeholder="Search…"
+          placeholder="  Search…"
           onChange={(e) => {
             setVolumeName(e.target.value);
           }}

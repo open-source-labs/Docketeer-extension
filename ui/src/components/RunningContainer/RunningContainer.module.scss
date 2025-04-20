@@ -22,6 +22,7 @@
   border-image: initial;
   transition: border 350ms ease 100ms, background-image 200ms ease;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
 }
 
 .containerCardStopped {
@@ -67,7 +68,7 @@
 }
 .containerMetricHolder {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  // grid-template-rows: 1fr 1fr;
   gap: 15px;
   // border: 1px solid white;
 }

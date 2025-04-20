@@ -46,10 +46,12 @@ export const ddClientRequest = async<T>(url: string, method: 'GET' | 'POST' | 'P
 
     fetchOptions.headers = { ...DEFAULT_HEADERS, ...headers }
     const result = await fetch(url, fetchOptions);
+    console.log('result in ddclient', result)
 
     // Handle error message return to format the same as ddClient error messages
     if (!result.ok) {
       let errorMessage;
+      console.log('Entered the matrix')
       try {
         const errorData = await result.json();
         errorMessage = errorData.message || JSON.stringify(errorData);

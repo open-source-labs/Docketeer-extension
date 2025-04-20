@@ -54,7 +54,8 @@
 .buttonDiv {
   display: flex;
   justify-content: center;
-  margin-left: 10px;
+  margin: 10px;
+  gap: 20px;
 }
 .button {
   background-color: #2351d1;
@@ -137,4 +138,39 @@
 
 .toggle:active:after {
   width: 30px;
+}
+
+.toast {
+  visibility: hidden;
+  min-width: 200px;
+  //background-color: #2279f3;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px;
+  position: fixed;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  animation: toastAnimation 3s forwards; 
+}
+
+.toast.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes toastAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

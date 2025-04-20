@@ -17,7 +17,7 @@
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "@nivo/core": ["node_modules/@nivo/core"],
-      "@nivo/pie": ["node_modules/@nivo/pie/dist/nivo-pie.esm.js"]
+      "@nivo/pie": ["node_modules/@nivo/pie"]
     }
   },
     "exclude": [

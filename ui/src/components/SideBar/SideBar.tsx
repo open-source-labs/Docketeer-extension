@@ -15,7 +15,7 @@ const SideBar = ({ isOpen, prune, toggleSideBar }: SideBarProps): React.JSX.Elem
 
   return (
     <div
-      style={{ width: isOpen ? '200px' : '0px' }}
+      style={{ width: isOpen ? 'fit-content' : '0px' }}
       className={sidebarConditional}
       data-testid='sidebar'
     >

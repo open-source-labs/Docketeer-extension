@@ -1,0 +1,173 @@
+// .modal-button-container {
+//   position: relative;
+
+.modalButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  color: white;
+  border-radius: 4px;
+
+  * {
+    overflow: visible;
+  }
+
+  .button-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .primaryButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 2px;
+    background-color: #123458;
+    color: white;
+    height: 45px;
+    width: 45px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #4d4d4d;
+    }
+  }
+
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    border-radius: 4px;
+  }
+
+  .modalContent {
+    background-color: white;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: modal-appear 0.3s ease-out;
+  }
+
+  @keyframes modal-appear {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .modalHeader {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(210, 15.2%, 18%);
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      color: white;
+    }
+
+    .closeButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      cursor: pointer;
+      color: white;
+      height: 30px;
+      width: 30px;
+
+      &:hover {
+        color: grey;
+      }
+    }
+  }
+
+  .modalBody {
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: hsl(210, 15.2%, 18%);
+    color: white;
+
+    .checkboxItem {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      color: white;
+
+      input[type="checkbox"] {
+        margin-right: 10px;
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+      }
+
+      label {
+        cursor: pointer;
+        font-size: 16px;
+        color: white;
+
+        .applied-indicator {
+          font-size: 14px;
+          color: #4a6cf7;
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  .modalFooter {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    background-color: hsl(210, 15.2%, 18%);
+
+    button {
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .cancelButton {
+      background-color: #f1f1f1;
+      border: none;
+      color: #555;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: grey;
+      }
+    }
+
+    .submitButton {
+      background-color: #123458;
+      border: none;
+      color: white;
+      transition: background-color 0.2s;
+      &:hover {
+        background-color: grey;
+      }
+    }
+  }
+}

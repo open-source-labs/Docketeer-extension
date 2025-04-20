@@ -28,7 +28,7 @@
 .topMargin {
 	// wrapper default margin doesn't push the top margin enough
 	// this is an extra div to add top margin to better match other pages
-	margin-top: 30px;
+	margin-top: 75px;
 }
 
 iframe {
@@ -55,6 +55,18 @@ iframe {
 	margin-bottom: 1rem;
 }
 
+.filterButton {
+	background-color: transparent;
+	height: 5rem;
+	width: 5rem;
+	color: black;
+	padding: 0rem;
+}
+
+.filterButtHolder {
+	display: flex;
+	justify-content: center;
+}
 .containerList {
 	display: grid;
 	gap: 1rem;
@@ -98,9 +110,9 @@ iframe {
 	}
 }
 .active {
-	background-color: rgba(13, 123, 241, 0.794);
+	background-color: #123458;
 	&:hover {
-		box-shadow: 1px 1px 10px rgba(13, 123, 241, 0.794);
+		box-shadow: 1px 1px 10px #123458;
 		text-shadow: 0 0 1px white;
 	}
 }
@@ -114,6 +126,11 @@ iframe {
 	&:hover {
 		box-shadow: 1px 1px 20px rgba(226, 222, 222, 0.2);
 	}
+}
+
+.counterDiv {
+	display:flex;
+	justify-content: space-between;
 }
 
 @media screen and (max-width: $breakpoint-lg) {
@@ -134,3 +151,4 @@ iframe {
 		grid-template-columns: minmax(480px, 1fr);
 	}
 }
+

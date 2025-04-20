@@ -1,3 +1,5 @@
+
+
 $navbar-transition: transform 0.3s ease-in-out;
 
 .navBar {
@@ -5,7 +7,7 @@ $navbar-transition: transform 0.3s ease-in-out;
   transition: $navbar-transition;
   transform: translateY($navbar-height);
   top: -$navbar-height;
-  background-color: #2351d1;
+  background-color: #123458;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,6 +18,9 @@ $navbar-transition: transform 0.3s ease-in-out;
   padding: 0 0rem;
   height: $navbar-height;
   width: $navbar-width;
+}
+.navMargin {
+  margin-top: $navbar-height;
 }
 
 .logoDiv {
@@ -39,7 +44,11 @@ $navbar-transition: transform 0.3s ease-in-out;
   justify-content: space-evenly;
   cursor: pointer;
   margin-right: 110px;
+  transition: all 0.2s ease-in-out;
   &:hover {
+
+    border-radius: 5px;
+    background-color:#13467c;
     color: rgba(154, 180, 251);
   }
 
@@ -74,10 +83,16 @@ $navbar-transition: transform 0.3s ease-in-out;
     // color: white;
     font-size: 1rem;
     height: 100%;
-
+    padding: 0.5rem 1rem; // Add spacing inside the highlight
+    transition: all 0.2s ease-in-out;
       &:hover {
       cursor: pointer;
+      background-color: #13467c;
+      //background-color:#123458;
       color: rgba(154, 180, 251);
+      //color: rgb(255, 255, 255);
+      padding: 0.5rem 1rem; // Add spacing inside the highlight
+      border-radius: 5px; // Optional: Add rounded corners for better visuals
     }
   }
 }
@@ -85,10 +100,13 @@ $navbar-transition: transform 0.3s ease-in-out;
 .navButton,
 .active {
   color: color(light, base);
+  padding: 0.5rem 1rem; // Add spacing inside the highlight
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
   // border-color: #2351d1;
   &:hover {
-    border-bottom: 4px solid white;
+    border-radius: 10px;
+    background-color: #13467c;
     color: rgba(154, 180, 251);
   }
 
@@ -101,7 +119,7 @@ $navbar-transition: transform 0.3s ease-in-out;
 .active {
   color: whitesmoke;
   font-weight: 1000;
-  border-bottom: 4px solid white;
+
 }
 
 @media screen and (min-width: $breakpoint-uw) {
@@ -115,8 +133,11 @@ $navbar-transition: transform 0.3s ease-in-out;
     max-width: $breakpoint-uw;
   }
 }
-
+//Change the position of switch button to relative positioning
 .switch {
-  position: absolute;
-  left: 47.5%;
-}
+    position: relative; 
+    left: auto; 
+    transform: none;
+    margin: 0 auto; 
+  }
+

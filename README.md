@@ -33,16 +33,13 @@
     <img src="assets/extended-dark.png" alt="Logo" width="550" height="auto">
   </a>
   <br />
-  https://docketeer.io/
-<br/>
-  
+  <a href="https://dogketeer.com/"><strong>https://dogketeer.com/</strong></a><br>
    <br /> 
   <p align="center">
   Docketeer is a developer-friendly application that provides a single interface for container and network management as well as metric visualization.  
     <br />
-    <a href="https://github.com/open-source-labs/Docketeer"><strong>Explore the code & contribute here!»</strong></a><br />
-    <a href="https://github.com/open-source-labs/docketeer-extension"><strong>See the extension version's code here!»</strong></a>
     <br />
+    <a href="https://github.com/open-source-labs/Docketeer"><strong>Docketeer Web App</strong></a><br />
     <br />
     <a href="https://github.com/open-source-labs/Docketeer/issues">Report Bug</a>
     ·
@@ -59,73 +56,23 @@
   <ol>
     <li>
     <a href="#about-the-project">About Docketeer</a></li>
+    <li><a href="#features">Features</a></li>
     <li><a href="#installation">Installation</a></li>
-    <li><a href="#in-development">In Development</a></li>
     <li><a href="#documentation">Documentation</a></li>
+    <li><a href="#demo">Demo</a></li>
     <li><a href="#contributing">Contributing</a></li> 
     <li><a href="#license">License</a></li>
-    <li><a href="#authors">Authors</a></li>
   </ol>
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
-
-<div align="center" width="100%">
-            
-[![Docker][Docker]][Docker-url][![Typescript][TS.js]][TS-url][![JavaScript][JavaScript]][JavaScript-url][![React][React.js]][React-url][![Redux][Redux]][Redux-url][![RTK][RTK]][RTK-url][![Node][Node.js]][Node-url][![Express][Express]][Express-url][![Redis][Redis]][Redis-url][![MongoDB][MongoDB]][MongoDB-url][![Postgres][Postgres]][Postgres-url][![Grafana][Grafana]][Grafana-url][![Prometheus][Prometheus]][Prometheus-url][![Jest][Jest]][Jest-url][![Vite][Vite]][Vite-url][![HTML5][HTML5]][HTML5-url][![CSS3][CSS3]][CSS3-url][![SASS][SASS]][SASS-url][![D3][D3]][D3-url][![MUI][MUI]][MUI-URL][![Git][Git]][Git-url]
-
+## About The Project     
 </div>
 
-Docketeer is an open source initiative comprising contributions from dozens of talented and passionate software engineers. Our application provides a simple interface to manage Docker resources & visualize both host and container metric data. Docketeer is a containerized application that can be deployed alongside your application cluster with hardly any effort. To learn more about our application and how to get started, keep reading!
+Docketeer is an open source initiative comprised of contributions from dozens of talented and passionate software engineers. Our application provides a simple interface to manage Docker resources & visualize both host and container metrics. Docketeer is a containerized application that can be deployed alongside your application cluster with hardly any effort. To learn more about Docketeer and how to get started, continue reading!
+<!-- FEATURES -->
 
-### What's New in Version 19.0.0?
-
-| Feature                                                                                                                                     | Status    |
-|---------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Image vulnerability scans utilizing Memcached to replace non-open source Redis                                                              | ✅        |
-| Added critical details to vulnerabilities, such as links to all vulnerability types and information on patched package versions             | ✅        |
-| Users can now use the Configuration Page to modify Prometheus target/metric settings, and restart Prometheus container within the app       | ✅        |
-| Users can now save newly modified Prometheus settings to MongoDB database                                                                   | ✅        |
-| Loading and error modals added to avoid waiting on potential crashes                                                                        | ✅        |
-| Updated color schemes for better readability, and high contrast mode for color-deficient users                                              | ✅        |
-| Consistent styles between pages for upgraded user experience                                                                                | ✅        |
-| Functional network and list reducer tests                                                                                                   | ✅        |
-
-- ✅ = Ready to use
-
-
-<br />
-  <div align="center">
-    <p>Container Page:</p>
-    <img alt="Containers Page" src="assets\containerTab-new.gif" width="fit" height="auto">
-    <p>Image Page:</p>
-    <img alt="Image Page" src="assets\images.gif" width="fit" height="auto">
-    <p>Image Page - Visualization:</p>
-    <img alt="Image Page - Visualizatio" src="assets\visualization.gif" width="fit" height="auto">
-    <p>Image Page - Time Series:</p>
-    <img alt="Image Page - Time Series" src="assets\TimeSeries.gif" width="fit" height="auto">
-    <p>Image Page High Contrast:</p>
-    <img alt="High Contrast" src="assets\highContrast.gif" width="fit" height="auto">
-    <p>Container Metrics Page:</p>
-    <img alt="Container Metrics Page" src="assets\metricTab-new.gif" width="fit" height="auto">
-    <p>Configuration Page:</p>
-    <img alt="Configuration Page" src="assets\configGif.gif" width="fit" height="auto">
-    <p>Kubernetes Page (In Development):</p>
-    <img alt="Kubernates Metrics Page" src="assets\k8Tab-new.gif" width="fit" height="auto">
-    <p>Volume Page:</p>
-    <img alt="Volume Page" src="assets\volumes.png" width="fit" height="auto">
-    <p>Other Tab Demo:</p>
-    <img alt="Others gif" src="assets\other.gif" width="fit" height="auto">
-    <p>Spooler:</p>
-    <img alt="Spooler" src="assets\Spooler.gif" width="fit" height="auto">
-  </div>
-<br />
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Features:
+## Features
 
 - Docketeer is a Docker developer tool that's available as an open-source project on GitHub or as an extension on Docker Desktop.
 - It aims to simplify the development process for projects that use Docker containers.
@@ -141,39 +88,19 @@ Docketeer is an open source initiative comprising contributions from dozens of t
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- INSTALLATION -->
+### What's New in Version 20.0.0?
 
-## Installation
-#### Open your Docker Desktop and search `Docketeer` and install the extension!
+| New Features                                                                                                                                     | Status    |
+|---------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| Setup an error catch to alert Users of errors that are in the Docker Container Log.                                                         | ✅        |
+| Optimize frontend rendering performance with lazy loading to reduce initial bundle size and eliminating redundant re-renders.               | ✅        |   
+| Complete update of all dependencies. Docketeer v20.0.0 is now fully compatible with Docker Desktop v4.40 as of 04/16/25.                    | ✅        |
+| Improved frontend styling and global styling making it easier to make future improvements                                                 | ✅        |
 
-Dev & Contributors - See [DevGettingStarted](/docs/DevGettingStarted.md) & Contributing section below!
+- ✅ = Ready to use
 
-<br/>
 
-`Notes:` If you encounter any `<dependency/package> not found by vite`: 
-
-- Turn off the server such as 
-```
-# Example: stop Browser Dev environment
-  make browser-down
-```
-- Delete everything Docketeer related - images, volumes, containers (should be deleted when you "make browser-down")
-
-- Run Docker compose without cache using this Makefile command:
-```
-# Example: To build without cached image layers
-  make browser-new
-```
-
-- See [Makefile](/Makefile) for more info!
-
-<br/>
-
-<!-- IN DEVELOPMENT -->
-
-## In Development
-
-| Feature                                                                                                                                     | Status    |
+| In Development                                                                                                                                    | Status    |
 |---------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | CI/CD pipeline for Docketeer repo.                                                                                                          | ⏳        |
 | Improve test coverage with additional unit tests and integration tests.                                                                     | ⏳        |
@@ -184,33 +111,244 @@ Dev & Contributors - See [DevGettingStarted](/docs/DevGettingStarted.md) & Contr
 | Implement endpoint scraping of any kubernetes cluster running prometheus. ([Read more](/docs/dev/features/Configuration(Alpha).md))         | ⏳        |
 | Work on improving the connect/disconnect button under networks button in Containers Tab.                                                    | ⏳        |
 | Adding additional key metrics to the snapshot functionality.                                                                                | ⏳        |
-| Setup a error catcher to alert Users of errors that are in the Docker Container Log.                                                        | ⏳        |
 | Implement functionality that alerts users when certain metrics reach critical threshold.                                                    | ⏳        |
 | Add functionality to load previously saved Prometheus configurations to the current container                                               | ⏳        |
+| Reduce memory consumption of the application                                                                                                | ⏳        |
 
-- ✅ = Ready to use
 - ⏳ = In progress
 
 See the [Known Issues Docs](/docs/KnownIssues.md) for a list of known issues.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- INSTALLATION -->
 
-<!-- IN DEVELOPMENT -->
+
+## 🚀 Installation Guide for Docketeer v20.0.0
+
+Docketeer is a Docker Desktop Extension for real-time container monitoring using Prometheus, Grafana, and cAdvisor. With updated dependencies, Docketeer v20.0.0 is now compatible with Docker Desktop v4.40 as of 04/18/25.
+
+---
+
+### ✅ Prerequisites
+
+1. **Install Docker Desktop**
+   - [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
+   - Follow the install steps for macOS or Windows.
+   - Verify installation:
+     ```bash
+     docker --version
+     ```
+   - Latest stable version of Docker Desktop is 4.40
+---
+
+## 🧩 Install Docketeer as an Extension
+
+1. Open Docker Desktop.
+2. Go to the **Extensions** tab.
+3. Search for `Docketeer`.
+4. Click **Install**.
+
+> For local development or contributing, follow the steps below.
+<li><a href="#documentation">Documentation</a></li>
+---
+
+## 🛠 Local Development: Browser Mode
+
+### 🔧 1. Enable Docker Extension Developer Mode
+
+- Open Docker Desktop → **Settings > Extensions** → Disable `Allow only extensions distributed through the Docker Marketplace`
+
+<img alt="Docker Settings" src="./assets/DockerSettings_v20.png" width="750" height="auto">
+---
+
+### 🌐 2. Run Docketeer in Browser Mode
+
+This will launch the full environment (frontend, backend, Postgres, Prometheus, Grafana, cAdvisor, etc.)
+
+#### To run clean with no cache:
+
+```bash
+make browser-new
+```
+
+- Docketeer UI → `http://localhost:4000`
+- Grafana → `http://localhost:49155`
+- Prometheus → `http://localhost:49156`
+- cAdvisor → `http://localhost:49158`
+
+---
+
+### 🛑 3. Power Down
+
+Stop and clean up all containers and volumes in Docker Desktop first before running ' make browser-down'
+
+Run in terminal:
+
+```bash
+make browser-down
+```
+
+This will clear all dangling resources
+
+Run in terminal:
+
+```bash
+make pruneAll
+```
+
+---
+
+### ⚠️ Troubleshooting (e.g. Vite package not found)
+
+If connnection to docker daemon is lost, may have to restart computer for a full reset. But, try running this sequence of Makefile commands
+
+Run in terminal:
+```bash
+make browser-down
+```
+
+Run in terminal:
+```bash
+make pruneAll
+```
+
+Check Docker Desktop to make sure Containers, Images, Volumes, Builds are cleared. If not cleared may have to quit and re-open Docker Desktop.
+
+Run in terminal:
+```bash
+make browser-new
+```
+---
+
+## 📦 Running the Docker Desktop Extension
+
+
+### 🧩 1. Install the extension locally
+
+```bash
+make extension-dev
+```
+
+
+### 🛑 3. Uninstall Extension
+
+Run in terminal:
+```bash
+make remove-dev-extension
+```
+
+Run in terminal:
+```bash
+make pruneAll
+```
+---
 
 ## Documentation
 For more details, please read the ***docs*** folder, which covers the following:
 
-- API 
-- Assets
-- Changelogs (V1-V18)
+- [API](./docs/api/openapi.yml) 
+- Changelogs (V14-V20)
+  - [v14.0.0](./docs/changelogs/docketeer14.notes.md)
+  - [v15.0.0](./docs/changelogs/docketeer15.notes.md)  
+  - [v16.0.0](./docs/changelogs/docketeer16.notes.md)  
+  - [v17.0.0](./docs/changelogs/docketeer17.notes.md)  
+  - [v18.0.0](./docs/changelogs/docketeer18.notes.md)  
+  - [v19.0.0](./docs/changelogs/docketeer19.notes.md)   
+  - [v20.0.0](./docs/changelogs/docketeer20.notes.md)   
 - Features 
-  - Configuration.md
-  - Models.md
-- DevGettingStarted.md
-- DevWorkingWithGrafana.md
-- KnownIssues.md
+  - [Configuration.md](./docs/features/Configuration(Alpha).md)
+  - [Models.md](./docs/features/Models.md) 
 
-When you are ready to launch, make sure to follow the instructions under ***Makefile***.
+Helpful Development Documents
+
+- [DevGettingStarted.md](./docs/DevGettingStarted.md)
+- [DevWorkingWithGrafana.md](./docs/DevWorkingWithGrafana.md)
+- [KnownIssues.md](./docs/KnownIssues.md)
+
+When you are ready to launch, make sure to follow the instructions under [Makefile](Makefile).
+
+
+<br />
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🗂 Project Structuring
+- [Dev Getting Started](./docs/DevGettingStarted.md)
+- [Makefile](/Makefile)
+
+| File                          | Purpose                                        |
+|-------------------------------|------------------------------------------------|
+| `docker-compose-browser.yaml` | Full browser-mode dev environment              |
+| `docker-compose-dev.yaml`     | Minimal extension test in dev mode             |
+| `docker-compose-prod.yaml`    | Production-ready extension deployment config   |
+| `dockerfile.dev`              | Dockerfile for dev builds (hot reload support) |
+| `dockerfile.prod`             | Dockerfile for production extension build      |
+| `Makefile`                    | CLI automation: build, run, down, clean        |
+
+---
+
+
+<br/>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<br />
+
+
+## Demo
+
+  <div align="center">
+    <p>Navigation</p>
+    <img alt="Navigation" src="./assets/Navigation_v20.gif" width="1000" height="auto">
+    <p>Container Page:</p>
+    <img alt="Containers Page" src="./assets/ContainersFilters_v20.gif" width="1000" height="auto">
+    <p align="right">(<a href="#readme-top">back to top</a>)</p>
+    <p>Image Page:</p>
+    <img alt="Image Page" src="./assets/Images_v20.gif" width="1000" height="auto">
+    <p>Snapshot Metrics:</p>
+    <img alt="Snapshot Metrics" src="./assets/SnapshotMetrics_v20.gif" width="1000" height="auto">
+    <p align="right">(<a href="#readme-top">back to top</a>)</p>
+    <p>Container Metrics Page:</p>
+    <img alt="Container Metrics Page" src="./assets/ContainersMetrics_v20.gif" width="1000" height="auto">
+    <p>Process Logs:</p>
+    <img alt="Process Logs" src="./assets/ProcessLogs_v20.gif" width="1000" height="auto">
+    <p align="right">(<a href="#readme-top">back to top</a>)</p>
+    <p>Kubernetes Page (In Development):</p>
+    <img alt="Kubernates Metrics Page" src="./assets/KubernetesClusterHealthMetrics_v20.gif" width="1000" height="auto">
+    <p>Network:</p>
+    <img alt="Network" src="./assets/Network_v20.png" width="1000" height="auto">
+    <p align="right">(<a href="#readme-top">back to top</a>)</p>
+    <p>Configuration Page:</p>
+    <img alt="Configuration Page" src="./assets/Configurations_v20.png" width="1000" height="auto">
+  </div>
+<br />
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## <b>Read More</b>
+- [Docketeer XX: Foundation Restoration](https://medium.com/@docketeer/docketeer-xx-foundation-restoration-5c8820afa836)
+- [Docketeer XIX: New Features in Uncharted Seas](https://medium.com/@ellissong/docketeer-xix-new-features-in-uncharted-seas-3baf72099488)
+- [Docketeer XVIII: A Whale of An Improvement](https://medium.com/@docketeerxii/announcing-docketeer-18-0-a-whale-of-an-improvement-67282fbbbe61)
+- [Docketeer XVII: Transforming with Security](https://medium.com/@docketeerxii/docketeer-xvii-transforming-with-security-45cd06da061d)
+- [Docketeer XVI: The Journey Continues](https://medium.com/@docketeerxii/introducing-docketeer-xvi-the-journey-continues-f34fc5bf7749)
+- [Docketeer XV: Navigating the Seas of Docker with Docketeer v15](https://medium.com/@christiandoescoding/navigating-the-seas-of-docker-with-docketeer-v15-0-ad5bd9540d14)
+- [Docketeer XIV: Coming Home](https://medium.com/@grantschussler/docketeer-xiv-coming-home-6eb011990a34)
+- [Docketeer XIII: A Tool for Docker!](https://medium.com/@michael_kwon_liu/docketeer-a-tool-for-docker-273793014eb0)
+- [Docketeer XII: Now Ready for Launch!](https://medium.com/@jaenixlee/docketeer-xii-now-ready-for-launch-d06e8f26cd0f)
+- [Introducing Docketeer XI | The Latest Version Ready for Takeoff with a Splash!](https://medium.com/@saadh123/introducing-docketeer-xi-the-latest-version-ready-for-takeoff-with-a-splash-d5f40eacb29d)
+- [Enjoy the sleek new look of Docketeer X](https://medium.com/@ajschmidt225/enjoy-the-sleek-new-look-of-docketeer-x-34c1ccf8bb2b)
+- [Docketeer is here to make a splash!](https://medium.com/@garima41/docketeer-9-0-is-here-to-make-a-splash-134336923d3d)
+- [Docketeer is here! You’re WHALEcome!](https://medium.com/@dfeldman24/docketeer-5-0-is-here-youre-whalecome-6f9d72ec3b58)
+- [Docketeer! What's new?](https://medium.com/@hultzentre/docketeer-5-0-whats-new-358a5f107ac4)
+- [Docketeer: An Innovative Tool to Manage Docker Containers](https://griffinsilver.medium.com/docketeer-3-0-an-innovative-tool-to-manage-docker-containers-723ea5be6220a)
+- [Whale Hello There, Docketeer 4.0 is Here!](https://msscloudy.medium.com/whale-hello-there-docketeer-4-0-is-here-b78bd9d1df01)
+- [Our Journey Building Docketeer](https://betterprogramming.pub/our-journey-building-docketeer-an-open-source-docker-container-monitoring-and-visualization-tool-fb6c26d8908a)
+
+<br />
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Show Your Support
+
+Please ⭐️ this project if you found it helpful, thank you!
+<br />
 
 <!-- CONTRIBUTING -->
 
@@ -231,43 +369,14 @@ Don't forget to give the project a star! Thanks again!
 Read our [contributing guide](https://github.com/open-source-labs/Docketeer/blob/master/CONTRIBUTING.md) for more information on how to purpose bugfixes and improvements to Docketeer.
 
 Need ideas for improvement? Check our [known issues](/docs/KnownIssues.md) for possible improvements / fixes!
-
-<br />
-
-## <b>Read More</b>
-- [Docketeer XIX: New Features in Uncharted Seas](https://medium.com/@ellissong/docketeer-xix-new-features-in-uncharted-seas-3baf72099488)
-- [Docketeer XVIII: A Whale of An Improvement](https://medium.com/@docketeerxii/announcing-docketeer-18-0-a-whale-of-an-improvement-67282fbbbe61)
-- [Docketeer XVII: Transforming with Security](https://medium.com/@docketeerxii/docketeer-xvii-transforming-with-security-45cd06da061d)
-- [Docketeer XVI: The Journey Continues](https://medium.com/@docketeerxii/introducing-docketeer-xvi-the-journey-continues-f34fc5bf7749)
-- [Docketeer XV: Navigating the Seas of Docker with Docketeer v15](https://medium.com/@christiandoescoding/navigating-the-seas-of-docker-with-docketeer-v15-0-ad5bd9540d14)
-- [Docketeer XIV: Coming Home](https://medium.com/@grantschussler/docketeer-xiv-coming-home-6eb011990a34)
-- [Docketeer XIII: A Tool for Docker!](https://medium.com/@michael_kwon_liu/docketeer-a-tool-for-docker-273793014eb0)
-- [Docketeer XII: Now Ready for Launch!](https://medium.com/@jaenixlee/docketeer-xii-now-ready-for-launch-d06e8f26cd0f)
-- [Introducing Docketeer XI | The Latest Version Ready for Takeoff with a Splash!](https://medium.com/@saadh123/introducing-docketeer-xi-the-latest-version-ready-for-takeoff-with-a-splash-d5f40eacb29d)
-- [Enjoy the sleek new look of Docketeer X](https://medium.com/@ajschmidt225/enjoy-the-sleek-new-look-of-docketeer-x-34c1ccf8bb2b)
-- [Docketeer is here to make a splash!](https://medium.com/@garima41/docketeer-9-0-is-here-to-make-a-splash-134336923d3d)
-- [Docketeer is here! You’re WHALEcome!](https://medium.com/@dfeldman24/docketeer-5-0-is-here-youre-whalecome-6f9d72ec3b58)
-- [Docketeer! What's new?](https://medium.com/@hultzentre/docketeer-5-0-whats-new-358a5f107ac4)
-- [Docketeer: An Innovative Tool to Manage Docker Containers](https://griffinsilver.medium.com/docketeer-3-0-an-innovative-tool-to-manage-docker-containers-723ea5be6220a)
-- [Whale Hello There, Docketeer 4.0 is Here!](https://msscloudy.medium.com/whale-hello-there-docketeer-4-0-is-here-b78bd9d1df01)
-- [Our Journey Building Docketeer](https://betterprogramming.pub/our-journey-building-docketeer-an-open-source-docker-container-monitoring-and-visualization-tool-fb6c26d8908a)
-
-<br />
-
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See [License](/LICENSE) for more information.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Show Your Support
-
-Please ⭐️ this project if you found it helpful, thank you!
-<br />
-
 ## Contributors
+
+- Rachel Baek [@rsbaek](https://github.com/rsbaek) | [Linkedin](https://www.linkedin.com/in/rachel-baek/)
+- Nika Mamaladze [@nikamamaladze92](https://github.com/nikamamaladze92) | [Linkedin](https://www.linkedin.com/in/nika-mamaladze-b06b53326/)
+- Chris Schiro [@cschiro](https://github.com/cschiro) | [Linkedin](https://www.linkedin.com/in/chris-schiro/)
+- Arthur Jin [@ArthurJZL](https://github.com/ArthurJZL) | [Linkedin](https://www.linkedin.com/in/arthur-jin/)
 - Aiden Carere [@AidenCarere](https://github.com/AidenCarere) | [Linkedin](https://www.linkedin.com/in/aidencarere/)
 - Chris Rodriguez [@chrisr0892](https://github.com/chrisr0892) | [Linkedin](https://www.linkedin.com/in/chris-kossky-rodriguez/)
 - Dylan Sterling [@dsterling7](https://github.com/dsterling7) | [Linkedin](https://www.linkedin.com/in/dylan-sterling-2b7256180/)
@@ -352,8 +461,14 @@ Please ⭐️ this project if you found it helpful, thank you!
 - Gabriela Pleitez Gomez [@gabyspg](https://github.com/gabyspg) | [LinkedIn](https://www.linkedin.com/in/gabriela-pleitez-gomez)
 - Peter Chung [@peterchung](https://github.com/peterchung) | [LinkedIn](https://www.linkedin.com/in/peterminkichung/)
 
+<!-- LICENSE -->
 
+## License
+
+Distributed under the MIT License. See [License](/LICENSE) for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 [contributors-shield]: https://img.shields.io/github/contributors/open-source-labs/Docketeer.svg?style=for-the-badge
 [contributors-url]: https://github.com/open-source-labs/Docketeer/graphs/contributors
@@ -368,53 +483,3 @@ Please ⭐️ this project if you found it helpful, thank you!
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/docketeer
 [product-screenshot]: images/screenshot.png
-[React.js]: https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
-[React-url]: https://reactjs.org/
-[TS.js]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
-[TS-url]: https://www.typescriptlang.org/
-[Grafana]: https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white
-[Grafana-url]: https://grafana.com/
-[Prometheus]: https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white
-[Prometheus-url]: https://prometheus.io/
-[JavaScript]: https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
-[JavaScript-url]: https://www.javascript.com/
-[Node.js]: https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
-[Node-url]: https://nodejs.org/en/
-[Vite]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
-[Vite-url]: https://vitejs.dev/
-[Express]: https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB
-[Express-url]: https://expressjs.com/
-[Redis]: https://img.shields.io/badge/redis-%23DD0031.svg?&style=for-the-badge&logo=redis&logoColor=white
-[Redis-url]: https://redis.com/
-[MongoDB]: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
-[MongoDB-url]: https://www.mongodb.com
-[Redux]: https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white
-[Redux-url]: https://redux.js.org/
-[Postgres]: https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white
-[Postgres-url]: https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white](https://www.postgresql.org/)
-[Jest]: https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white
-[Jest-url]: https://jestjs.io/
-[Styled Components]: https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white
-[Styled Components-url]: https://styled-components.com/
-[Docker]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
-[Docker-url]: https://www.docker.com/
-[Git]: https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white
-[Git-url]: https://git-scm.com/
-[CSS3]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
-[CSS3-url]: https://www.w3schools.com/css/
-[HTML5]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
-[HTML5-url]: https://www.w3schools.com/html/
-[MySQL]: https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white
-[MySQL-url]: https://www.mysql.com/
-[SASS]: https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white
-[SASS-url]: https://sass-lang.com/
-[RTK]: https://img.shields.io/badge/RTK-563D7C?style=for-the-badge&logo=redux&logoColor=white
-[RTK-url]: https://redux-toolkit.js.org/
-[Helm]: https://img.shields.io/badge/helm-navy?style=for-the-badge&logo=helm&logoColor=white
-[Helm-url]: https://helm.sh/
-[Kubernetes]: https://img.shields.io/badge/kubernetes-3371e3?style=for-the-badge&logo=kubernetes&logoColor=white
-[Kubernetes-url]: https://kubernetes.io/
-[D3]: https://img.shields.io/badge/d3-red?style=for-the-badge&logo=d3.js
-[D3-url]: https://d3js.org/
-[MUI]:https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white
-[MUI-url]: https://mui.com/

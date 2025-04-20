@@ -19,6 +19,8 @@ export const fetchRunningContainers = createAsyncThunk(
   'containers/fetchRunningContainers',
   async () => {
     const result: ContainerPS[] = await Client.ContainerService.getRunningContainers();
+    console.log("result", result)
+    console.log("type of result", typeof result)
     return result;
   }
 )

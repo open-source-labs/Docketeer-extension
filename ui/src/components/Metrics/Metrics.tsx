@@ -3,8 +3,10 @@ import styles from './Metrics.module.scss';
 import { Metric, MetricsEntry, metricData } from 'types';
 import Client from '../../models/Client'
 
-const Metrics = (): JSX.Element => {
+import global from '../global.module.scss'
 
+const Metrics = ({ filters, setFilters}): JSX.Element => {
+  const [messageVisible, setMessageVisible] = useState<boolean>(false);
   const [resetIframe, setResetIframe] = useState<boolean>(true);
   //Refreshing the page back to home 
   const handleHome = (): void => {
@@ -49,6 +51,11 @@ const Metrics = (): JSX.Element => {
 
     await Promise.all(fetchPromises);
     const data = await Client.MetricService.createMetrics(metricsEntry)
+
+    setMessageVisible(true); 
+     setTimeout(() => {
+      setMessageVisible(false); 
+    }, 3000); 
   }
 
   return (
@@ -56,14 +63,21 @@ const Metrics = (): JSX.Element => {
       <div className={styles.iframeHeader}>
         <h1 className={styles.metricsTitle}>METRICS DASHBOARD</h1>
         <div className={styles.buttonDiv}>
-          <button className={styles.button} onClick={handleHome}>
+          <button className={global.button1} onClick={handleHome}>
             HOME
           </button>
-          <button className={styles.button} onClick={getMetrics}>
+          <button className={global.button1} onClick={getMetrics}>
             SAVE METRICS
           </button>
         </div>
       </div>
+
+         
+      {messageVisible && (
+         <div className={`${styles.toast} ${styles.visible}`}>Metrics Saved!</div>
+      )}
+
+
       <div className={styles.iframeDiv}>
         <iframe
           key={resetIframe}
@@ -71,6 +85,7 @@ const Metrics = (): JSX.Element => {
           className={styles.metrics}
           src="http://localhost:49155/d/metrics_monitoring/docker-and-system-monitoring?orgId=1&refresh=5s&kiosk"
         />
+        
       </div>
     </div>
   );

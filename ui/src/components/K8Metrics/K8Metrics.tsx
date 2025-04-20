@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './K8Metrics.module.scss';
+import global from '../global.module.scss'
 
 
 const K8Metrics = (): JSX.Element => {
@@ -15,7 +16,7 @@ const K8Metrics = (): JSX.Element => {
       <div className={styles.iframeHeader}>
         <h1 className={styles.kubernetesTitle} >KUBURNETES CLUSTER HEALTH METRICS</h1>
         <div className={styles.iframeControl}>
-          <button className={styles.button} onClick={handleHome}>
+          <button className={global.button1} onClick={handleHome} style = {{marginLeft: '10px'}} >
             REFRESH
           </button>
         </div>

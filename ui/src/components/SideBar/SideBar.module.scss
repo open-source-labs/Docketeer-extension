@@ -1,15 +1,15 @@
 .SideBar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  align-items: stretch;
+  justify-content: flex-start;
   text-align: center;
-  height: 30vh;
   position: fixed;
   right: 5%;
   top: 60px;
   background-color: color(background, base);
-  border-radius: 10px;
+  border-radius: 7px;
+  gap:0;
 }
 
 /* Border styles for open state */
@@ -24,11 +24,17 @@
 
 .navButton,
 .active {
+  display:flex;
+  align-items: stretch;
+  justify-content:center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
   color: color(light, base);
   cursor: pointer;
   border-color: #2351d1;
   &:hover {
-    border-bottom: 4px solid white;
+    
     color: rgba(154, 180, 251);
   }
   
@@ -40,7 +46,9 @@
 
 .active {
   color: whitesmoke;
-  font-weight: 1000;
-  border-bottom: 4px solid white;
-}
+  background-color: #123458;
+  border-radius: 7px;
+  
+  
 
+}

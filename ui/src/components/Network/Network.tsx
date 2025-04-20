@@ -327,7 +327,7 @@ const Network = (): JSX.Element => {
             type='text'
             id='newNetwork'
             value={network}
-            placeholder='Input network name here...'
+            placeholder='  Input network name here...'
             onChange={e => {
               setNetwork(e.target.value);
             }}

@@ -380,7 +380,7 @@ const handleGetLogs = async (idList: object) => {
                 className={globalStyles.input}
                 type='text'
                 value={searchWord}
-                placeholder='Search log messages...'
+                placeholder='  Search log messages...'
                 onChange={e => {
                   dispatch(setSearchWord(e.target.value));
                 }}

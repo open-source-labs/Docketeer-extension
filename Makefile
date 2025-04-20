@@ -19,6 +19,9 @@ NO_COLOR   = \033[m
 browser-new:
 	docker compose -f extension/docker-compose-browser.yaml up --build -d
 
+browser-new-dep:
+	docker compose -f extension/docker-compose-browser-dependencies.yaml up --build -d
+
 # RECOMMENDED
 browser-dev:
 	docker compose -f ${DOCKERFILEDIRECTORY}/docker-compose-browser.yaml up -d
@@ -83,6 +86,9 @@ validate-prod: install-prod## Make sure you have the multiplatform image created
 prepare-buildx: ## Create buildx builder for multi-arch build, if not exists
 	docker buildx inspect $(BUILDER) || docker buildx create --name=$(BUILDER) --driver=docker-container --driver-opt=network=host
 
+# added a new makefile target to make dev experience simpler
+remake-extension-dev:
+	$(MAKE) remove-dev-extension extension-dev
 
 ## DEPLOYMENT: type 'make help' and follow every single step before pushing up with 'make push-extension'
 ## NOTE: validate-prod and prepare-buildx may fail during deployment steps. If so, ignore and move on to next steps in the 'make help' process

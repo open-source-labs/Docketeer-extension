@@ -72,6 +72,8 @@ kubectl port-forward service/my-prometheus-server 45555:80
 
 * cAdvisor is ***not*** being deprecated May 15, 2024. The [link in question](https://console.cloud.google.com/gcr/images/cadvisor/GLOBAL/cadvisor) states: "***Container Registry*** is deprecated. After May 15, 2024, ***Artifact Registry*** will host images for the gcr.io domain in projects without previous Container Registry usage." This suggests nothing to do with cAdvisor specifically, so please do not let anyone tell you otherwise. 
 
+* well that turned out to be a lie 04/17/25
+
 ## Troubleshooting
 
 #### Network Capacity
