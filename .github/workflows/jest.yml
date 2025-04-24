@@ -1,14 +1,19 @@
 name: Jest
+
 on: 
   pull_request:
     types: [opened, edited, reopened, synchronize]
     branches:
       - dev
+  workflow_dispatch:  # 👈 allows you to run it manually from GitHub UI
+
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -29,5 +34,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run the tests
-        run: npm test
+      - name: Run the tests with coverage
+        run: npm test -- --coverage
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage
