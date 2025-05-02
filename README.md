@@ -33,7 +33,7 @@
     <img src="assets/extended-dark.png" alt="Logo" width="550" height="auto">
   </a>
   <br />
-  <a href="https://dogketeer.com/"><strong>https://dogketeer.com/</strong></a><br>
+  <a href="https://docketeer.io/"><strong>https://docketeer.io/</strong></a><br>
    <br /> 
   <p align="center">
   Docketeer is a developer-friendly application that provides a single interface for container and network management as well as metric visualization.  
